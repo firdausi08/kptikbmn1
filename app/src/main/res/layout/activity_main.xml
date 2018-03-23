@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+tools:context="com.example.afip.kptikbmn1.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logokemenkeu2" />
+
+            <TextView
+                android:id="@+id/namalogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/logo"
+                android:gravity="left|center"
+                android:layout_centerInParent="true"
+                android:text="KPTIK BMN
+Surabaya"
+                android:textColor="#e4ff8a"
+                />
+        </RelativeLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#e4ff8a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+
+        >
+
+        <ImageView
+            android:id="@+id/imageslider"
+            android:layout_width="340dp"
+            android:layout_height="180dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/foto1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/button_lapor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_left_gray"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/lapor"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/icon_lapor" />
+
+
+                <TextView
+                    android:id="@+id/text_lapor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lapor"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="20dp"
+                    android:text="Lapor"
+                    android:textColor="#f44242"/>
+                <TextView
+                    android:id="@+id/text_gangguan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_lapor"
+                    android:layout_marginLeft="5dp"
+
+                    android:textSize="20dp"
+                    android:text="Gangguan"
+                    android:textColor="#f44242"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_lembur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_right_gray"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/lembur"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/icon_lembur" />
+
+
+                <TextView
+                    android:id="@+id/text_pemberitahuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/lembur"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20dp"
+                    android:text="Pemberitahuan"
+                    android:textColor="#f99f4e"/>
+                <TextView
+                    android:id="@+id/text_lembur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/text_pemberitahuan"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"
+                    android:text="Lembur"
+                    android:textColor="#f99f4e"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/button_aula"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_weight="0"
+                android:background="@drawable/border_left_gray"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/aula"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/icon_aula" />
+
+                <TextView
+                    android:id="@+id/text_aula"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aula"
+                    android:textAlignment="center"
+
+                    android:textSize="20dp"
+                    android:text="Penggunaan Aula"
+                    android:textColor="#0fb2a6"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

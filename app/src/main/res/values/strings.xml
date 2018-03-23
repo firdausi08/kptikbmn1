@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">KptikBmn1</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_ruangan2">Ruangan2</string>
+    <string-array name="list_aula">
+        <item>Aula GKN Surabaya I Lantai 7</item>
+        <item>Aula GKN Surabaya II Lantai 4</item>
+        <item>Aula Gedung Arsip Lantai 4</item>
+        <item>Aula Majapahit Kanwil DJPB Lantai 1</item>
+        <item>Aula KPPN Surabaya I Lantai 3</item>
+    </string-array>
+</resources>

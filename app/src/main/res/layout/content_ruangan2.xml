@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.afip.kptikbmn1.Ruangan2"
+    tools:showIn="@layout/activity_ruangan2">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_aula" />
+
+            <TextView
+                android:id="@+id/namalogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/logo"
+                android:gravity="left|center"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="Pinjam
+Ruangan"
+                android:textColor="#e4ff8a"
+                />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#e4ff8a"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!--  ListRow Left sied Thumbnail image -->
+
+
+            <!-- Title Of Song-->
+            <TextView
+                android:id="@+id/nama_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/thumbnail"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="Biro Perencanaan Keuangan"
+                android:textColor="#9f0303"
+                android:typeface="sans"
+                android:textSize="15dip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold"/>
+
+            <!-- Artist Name -->
+            <TextView
+                android:id="@+id/nama_ruangan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nama_unit"
+                android:textColor="#032f87"
+                android:textSize="13dip"
+                android:layout_marginTop="1dip"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="Aula GKN Surabaya I" />
+
+            <TextView
+                android:id="@+id/nama_acara"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nama_ruangan"
+                android:textColor="#343434"
+                android:textSize="13dip"
+                android:layout_marginTop="1dip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="''Sosialisasi Evaluasi Pelaksanaan Anggaran da Rekonsiliasi TA 2017''" />
+
+            <!-- Rightend Duration -->
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/nama_unit"
+                android:gravity="right"
+                android:text="5:45"
+                android:layout_marginRight="5dip"
+                android:textSize="10dip"
+                android:textColor="#10bcc9"
+                android:textStyle="bold"/>
+
+            <!-- Rightend Arrow -->
+            <!--<ImageView android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/arrow"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"/>-->
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

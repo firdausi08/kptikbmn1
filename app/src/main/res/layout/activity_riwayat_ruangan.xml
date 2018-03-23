@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_aula" />
+
+            <TextView
+                android:id="@+id/namalogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/logo"
+                android:gravity="left|center"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="Pinjam
+Ruangan"
+                android:textColor="#e4ff8a"
+                />
+
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#e4ff8a">
+
+
+
+        <RelativeLayout
+            android:id="@+id/layarkiri"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/nama_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/thumbnail"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:text="Biro Perencanaan Keuangan"
+                    android:textColor="#9f0303"
+                    android:typeface="sans"
+                    android:textSize="15dip"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="7dp"
+                    android:textStyle="bold"/>
+
+                <!-- Artist Name -->
+                <TextView
+                    android:id="@+id/nama_ruangan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nama_unit"
+                    android:textColor="#032f87"
+                    android:textSize="13dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:text="Aula GKN Surabaya I" />
+
+                <!-- Rightend Duration -->
+                <TextView
+                    android:id="@+id/waktu_ruangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nama_ruangan"
+                    android:text="12 September 2018 5:45"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="13dip"
+                    android:textColor="#10bcc9"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/nama_acara"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/waktu_ruangan"
+                    android:textColor="#343434"
+                    android:textSize="13dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:text="''Sosialisasi Evaluasi Pelaksanaan Anggaran da Rekonsiliasi TA 2017''" />
+
+
+
+                <ImageView
+                    android:id="@+id/edit_ruangan"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/title"
+                    android:layout_marginRight="15dip"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/edit"
+                    android:gravity="right"
+                    android:textColor="#10bcc9"
+                    android:textSize="10dip"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/hapus_ruangan"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/title"
+                    android:layout_below="@+id/edit_ruangan"
+                    android:layout_marginRight="15dip"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/delete"
+                    android:gravity="right"
+                    android:textColor="#10bcc9"
+                    android:textSize="10dip"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

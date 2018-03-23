@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_lapor" />
+
+            <TextView
+                android:id="@+id/namalogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/logo"
+                android:gravity="left|center"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="Lapor
+Gangguan"
+                android:textColor="#e4ff8a"
+                />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#e4ff8a">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!--  ListRow Left sied Thumbnail image -->
+            <LinearLayout android:id="@+id/thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dip">
+
+                <ImageView
+                    android:id="@+id/list_image"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:src="@drawable/icon_kameraabu"/>
+
+            </LinearLayout>
+
+            <!-- Title Of Song-->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/thumbnail"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="Lampu Rusak"
+                android:textColor="#040404"
+                android:typeface="sans"
+                android:textSize="15dip"
+                android:textStyle="bold"/>
+
+            <!-- Artist Name -->
+            <TextView
+                android:id="@+id/artist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:textColor="#343434"
+                android:textSize="10dip"
+                android:layout_marginTop="1dip"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="Survey dan Diagnosa" />
+
+            <!-- Rightend Duration -->
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/title"
+                android:gravity="right"
+                android:text="5:45"
+                android:layout_marginRight="5dip"
+                android:textSize="10dip"
+                android:textColor="#10bcc9"
+                android:textStyle="bold"/>
+
+            <!-- Rightend Arrow -->
+            <!--<ImageView android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/arrow"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+        </RelativeLayout>
+
+
+        </LinearLayout>
+</LinearLayout>

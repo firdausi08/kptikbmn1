@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.afip.kptikbmn1.Ruangan2">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme"
+            android:elevation="4dp">
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_lapor" />
+
+        <TextView
+            android:id="@+id/namalogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/logo"
+            android:gravity="left|center"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:text="Lapor
+Gangguan"
+            android:textColor="#e4ff8a"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/content_ruangan2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="#e4ff8a">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nama_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/thumbnail"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="Biro Perencanaan Keuangan"
+                android:textColor="#9f0303"
+                android:typeface="sans"
+                android:textSize="15dip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold"/>
+
+            <!-- Artist Name -->
+            <TextView
+                android:id="@+id/nama_ruangan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nama_unit"
+                android:textColor="#032f87"
+                android:textSize="13dip"
+                android:layout_marginTop="1dip"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="Aula GKN Surabaya I" />
+
+            <TextView
+                android:id="@+id/nama_acara"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nama_ruangan"
+                android:textColor="#343434"
+                android:textSize="13dip"
+                android:layout_marginTop="1dip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="''Sosialisasi Evaluasi Pelaksanaan Anggaran da Rekonsiliasi TA 2017''" />
+
+            <!-- Rightend Duration -->
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/nama_unit"
+                android:gravity="right"
+                android:text="5:45"
+                android:layout_marginRight="5dip"
+                android:textSize="10dip"
+                android:textColor="#10bcc9"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</android.support.design.widget.CoordinatorLayout>
