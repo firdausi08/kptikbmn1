@@ -26,7 +26,7 @@ import android.widget.TimePicker;
 
 public class FormRuangan extends AppCompatActivity {
 
-    private EditText edit_acara;
+    private EditText edit_acara, nomerhp;
     private Spinner spinner;
     private CheckBox checkBox1 = null;
     private CheckBox checkBox2 = null;
@@ -59,6 +59,7 @@ public class FormRuangan extends AppCompatActivity {
         txtTime = (EditText) findViewById(R.id.txtTime);
         txtDate2 = (EditText) findViewById(R.id.txtDate2);
         txtTime2 = (EditText) findViewById(R.id.txtTime2);
+        nomerhp = (EditText) findViewById(R.id.nomerhp);
         // get the current date
         final Calendar c = Calendar.getInstance();
         mYear = c.get(Calendar.YEAR);
@@ -202,48 +203,48 @@ public class FormRuangan extends AppCompatActivity {
 
     ///////////////////////////////////////////////////////////////////////////////////
 
-    protected Dialog onCreateDialog2(int id2, int mYear2, int mMonth2, mDay2, hour2, minute2)
-    {
-        int mYear2,mMonth2, mDay2, hour2, minute2;
-
-        switch (id2) {
-            case TIME_DIALOG_ID2:
-                return new TimePickerDialog(
-                        this, mTimeSetListener2, hour, minute, true);
-                        this, mTimeSetListener2, hour, minute, true);
-            case DATE_DIALOG_ID2:
-                return new DatePickerDialog(
-                        this, mDateSetListener2, Year, Month, Day);
-        }
-        return null;
-    }
-
-    private DatePickerDialog.OnDateSetListener mDateSetListener2 = new DatePickerDialog.OnDateSetListener()
-    {
-        @Override
-        public void onDateSet(DatePicker view, int year, int monthOfYear,int dayOfMonth) {
-            String sdate = arrMonth2[monthOfYear] + " " + LPad2(dayOfMonth + "", "0", 2) + ", " + year;
-            txtDate2.setText(sdate);
-        }
-    };
-
-    private TimePickerDialog.OnTimeSetListener mTimeSetListener2 = new TimePickerDialog.OnTimeSetListener()
-    {
-
-        public void onTimeSet(TimePicker view, int hourOfDay, int minuteOfHour)
-        {
-            String stime = LPad2(""+hourOfDay, "0", 2) + ":"+ LPad(""+hourOfDay, "0", 2);
-            txtTime2.setText(stime);
-        }
-    };
-
-    private static String LPad2(String schar, String spad, int len) {
-        String sret2 = schar;
-        for (int i = sret2.length(); i < len; i++) {
-            sret2 = spad + sret2;
-        }
-        return new String(sret2);
-    }
+//    protected Dialog onCreateDialog2(int id2, int mYear2, int mMonth2, mDay2, hour2, minute2)
+//    {
+//        int mYear2,mMonth2, mDay2, hour2, minute2;
+//
+//        switch (id2) {
+//            case TIME_DIALOG_ID2:
+//                return new TimePickerDialog(
+//                        this, mTimeSetListener2, hour, minute, true);
+//                        this, mTimeSetListener2, hour, minute, true);
+//            case DATE_DIALOG_ID2:
+//                return new DatePickerDialog(
+//                        this, mDateSetListener2, Year, Month, Day);
+//        }
+//        return null;
+//    }
+//
+//    private DatePickerDialog.OnDateSetListener mDateSetListener2 = new DatePickerDialog.OnDateSetListener()
+//    {
+//        @Override
+//        public void onDateSet(DatePicker view, int year, int monthOfYear,int dayOfMonth) {
+//            String sdate = arrMonth2[monthOfYear] + " " + LPad2(dayOfMonth + "", "0", 2) + ", " + year;
+//            txtDate2.setText(sdate);
+//        }
+//    };
+//
+//    private TimePickerDialog.OnTimeSetListener mTimeSetListener2 = new TimePickerDialog.OnTimeSetListener()
+//    {
+//
+//        public void onTimeSet(TimePicker view, int hourOfDay, int minuteOfHour)
+//        {
+//            String stime = LPad2(""+hourOfDay, "0", 2) + ":"+ LPad(""+hourOfDay, "0", 2);
+//            txtTime2.setText(stime);
+//        }
+//    };
+//
+//    private static String LPad2(String schar, String spad, int len) {
+//        String sret2 = schar;
+//        for (int i = sret2.length(); i < len; i++) {
+//            sret2 = spad + sret2;
+//        }
+//        return new String(sret2);
+//    }
 
 
 }
